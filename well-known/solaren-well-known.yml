@@ -1,0 +1,32 @@
+generated: '2026-08-28'
+method: probed
+source: live HTTPS probes of https://www.solarenspace.com/.well-known/*
+note: >-
+  Every /.well-known/ path probed on Solaren's only public host returned HTTP 500 with the
+  WordPress theme's error page (text/html, ~31KB), not a document. The host has no
+  /.well-known/ surface of any kind. No WellKnown or SecurityTxt pointer is emitted in
+  apis.yml, because a recorded absence must not be published as a presence.
+hosts:
+- host: www.solarenspace.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 500
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 500
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 500
+    file: null
+  - path: /.well-known/api-catalog
+    status: 500
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 500
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 500
+    file: null
+  - path: /.well-known/agent.json
+    status: 500
+    file: null

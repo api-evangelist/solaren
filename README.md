@@ -64,5 +64,8 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Solaren is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+Solaren is a combination energy and aerospace company headquartered in Manhattan Beach, California, founded in 2001. It designs, develops, integrates, deploys and operates space solar power (SSP) plants — solar arrays on a patented lightweight satellite in geosynchronous orbit that convert sunlight to electricity, convert it to radio-frequency power, and beam it to an earth receiving station for delivery to the grid as baseload power. Solaren owns and operates its plants and sells electricity to utility and government customers, and signed the world's first power purchase agreement for space solar electricity with Pacific Gas & Electric.
+
+Solaren publishes no public API, developer portal, SDK, or machine-readable API contract; this profile records that absence and the public identity/security surface that was probed.
+
+- https://www.solarenspace.com/

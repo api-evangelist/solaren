@@ -1,0 +1,73 @@
+# Solaren
+
+> Solaren is a combination energy and aerospace company headquartered in Manhattan Beach, California,
+> founded in 2001. It designs, develops, integrates, deploys and operates space solar power (SSP)
+> plants — solar arrays on a patented lightweight satellite in geosynchronous orbit that convert
+> sunlight to electricity, convert it to radio-frequency power, and beam it to an earth receiving
+> station for delivery to the grid as baseload power. Solaren owns and operates its plants and sells
+> electricity to utility and government customers.
+
+## API surface
+
+Solaren publishes **no public API, no developer portal, no SDK, and no machine-readable API
+contract**. Software is not the product; the product is electricity generated in orbit and sold
+under power purchase agreements. As of 2026-08-28 the following were probed on www.solarenspace.com
+and none returned a machine-readable contract:
+
+- /openapi.json, /openapi.yaml, /swagger.json, /v1/openapi.json, /api-docs, /docs, /redoc — HTTP 500 (WordPress error page)
+- /graphql — HTTP 500
+- /apis.json, /llms.txt — HTTP 500
+- /.well-known/security.txt, /.well-known/openid-configuration, /.well-known/oauth-authorization-server,
+  /.well-known/api-catalog, /.well-known/ai-plugin.json, /.well-known/agent-card.json,
+  /.well-known/agent.json — HTTP 500
+- No hosted MCP server, no A2A agent card, no gRPC/Protobuf, no WSDL, no AsyncAPI, no published SDK
+  packages on npm/PyPI/Maven/NuGet/RubyGems/crates.io, and no company GitHub organization were found.
+
+The only machine-readable endpoint served on the domain is the **default WordPress core REST API**
+at https://www.solarenspace.com/wp-json/ (namespaces: wp/v2, oembed/1.0, wp-site-health/v1,
+wp-block-editor/v1, wp-abilities/v1, plus the wpvulnerability plugin). It is content-management
+infrastructure that ships with the CMS, not a Solaren product API, and it declares no company
+namespace. It is recorded here for completeness and deliberately not catalogued as a Solaren API.
+
+## Company
+
+- [Solaren](https://www.solarenspace.com/): Company home.
+- [Our Company](https://www.solarenspace.com/our-company/): Overview, mission, and how the company is organized.
+- [Our Story](https://www.solarenspace.com/our-company/our-story/): History from the 2001 founding.
+- [Leadership](https://www.solarenspace.com/our-company/leadership/): Gary T. Spirnak (Founder, Chairman, President & CEO) and the leadership team.
+- [Our Businesses](https://www.solarenspace.com/our-company/our-businesses/): Business unit structure.
+
+## Space solar power
+
+- [SSP Overview](https://www.solarenspace.com/solaren-space-solar/ssp-overview/): How the patented space solar power system works, its benefits, and the patent position.
+- [SSP Systems Group](https://www.solarenspace.com/solaren-space-solar/solaren-ssp-systems-group/)
+- [SSP Plant Operations Group](https://www.solarenspace.com/solaren-space-solar/solaren-ssp-plant-operations-group/)
+- [Electricity Sales Group](https://www.solarenspace.com/solaren-space-solar/electricity-sales-group/)
+- [Advanced SSP Technology Group](https://www.solarenspace.com/solaren-space-solar/advanced-ssp-technology-group/)
+- [Space Solar FAQs](https://www.solarenspace.com/solaren-space-solar/space-solar-frequently-asked-questions-faqs/)
+
+## Environment
+
+- [The Environment](https://www.solarenspace.com/the-environment/): Climate position and baseload comparison.
+- [SSP Environmental Benefits](https://www.solarenspace.com/the-environment/ssp-environmental-benefits/)
+- [SSP Environmental Impact](https://www.solarenspace.com/the-environment/ssp-environmental-impact/)
+
+## News, investors, suppliers, careers
+
+- [News & Events](https://www.solarenspace.com/news-events/)
+- [Press Releases](https://www.solarenspace.com/news-events/press-releases/)
+- [RSS feed](https://www.solarenspace.com/feed/)
+- [Investor Relations](https://www.solarenspace.com/investor-relations/)
+- [Supplier Relations](https://www.solarenspace.com/supplier-relations/)
+- [Careers](https://www.solarenspace.com/careers/)
+- [Contact](https://www.solarenspace.com/contact-us)
+
+## Legal
+
+- [Privacy](https://www.solarenspace.com/privacy)
+- [Terms of Use](https://www.solarenspace.com/terms-of-use)
+
+## Provenance
+
+Generated 2026-08-28 by the API Evangelist enrichment pipeline from Solaren's own public website
+and live HTTP probes. Method: generated. Solaren did not author this file.

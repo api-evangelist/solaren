@@ -1,0 +1,17 @@
+generated: '2026-08-28'
+method: searched
+source: https://www.solarenspace.com/
+plan_count: 0
+plans: []
+note: >-
+  Solaren publishes no plans, pricing page, or self-serve tiers of any kind. It is an energy
+  and aerospace company that sells baseload electricity to utility and government customers
+  under negotiated power purchase agreements (its PG&E agreement is the world's first PPA for
+  space solar electricity); there is no API product and therefore no API pricing to record.
+  The site's navigation (Our Company, Space Solar, The Environment, News & Events, Investors,
+  Suppliers, Careers) contains no pricing or developer section. Searched 2026-08-28.
+evidence:
+- url: https://www.solarenspace.com/
+  status: 200
+- url: https://www.solarenspace.com/solaren-space-solar/electricity-sales-group/
+  status: 200

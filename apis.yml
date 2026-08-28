@@ -1,7 +1,18 @@
 aid: solaren
 name: Solaren
-description: 'Solaren is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: >-
+  Solaren is a combination energy and aerospace company headquartered in Manhattan Beach,
+  California, founded in 2001 by a team of satellite engineers and space scientists. Solaren
+  designs, develops, integrates, deploys and operates space solar power (SSP) plants: solar
+  arrays on a patented lightweight solar power satellite in geosynchronous orbit convert
+  sunlight to electricity, convert that electricity to radio-frequency power, and beam it to
+  an earth receiving station that returns it to the grid as baseload power. The company's
+  business model is to own and operate its SSP plants and sell continuous, zero-emission
+  electricity to utility and government customers; it signed the world's first power purchase
+  agreement for space solar electricity, with Pacific Gas & Electric. Solaren is a hardware
+  and energy-generation company and publishes no public developer program, API, or
+  machine-readable API contract.
+image: https://www.solarenspace.com/wp-content/themes/solaren/img/logo.png
 url: https://raw.githubusercontent.com/api-evangelist/solaren/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -12,6 +23,14 @@ created: '2026-08-28'
 modified: '2026-08-28'
 tags:
 - Company
+- Energy
+- Electricity
+- Renewable Energy
+- Space
+- Aerospace
+- Satellites
+- Solar Power
+- Utilities
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +38,50 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/solaren-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.solarenspace.com/
+- type: Blog
+  url: https://www.solarenspace.com/news-events/press-releases/
+- type: BlogRSS
+  url: https://www.solarenspace.com/feed/
+- type: Support
+  url: https://www.solarenspace.com/contact-us
+- type: PrivacyPolicy
+  url: https://www.solarenspace.com/privacy
+- type: TermsOfService
+  url: https://www.solarenspace.com/terms-of-use
+- type: LLMsTxt
+  url: llms/solaren-llms.txt
+- type: Plans
+  url: plans/solaren-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/solaren-rate-limits.yml
+x-enrichment:
+  date: '2026-08-28'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Solaren generates and sells electricity from orbiting space solar power plants under
+    utility power purchase agreements, and its single public site is a WordPress marketing
+    brochure with no developer section — every OpenAPI, GraphQL and /.well-known/ path
+    probed returned the theme's HTTP 500 error page, and the only machine-readable endpoint
+    on the domain is the default WordPress core REST API at /wp-json/ (wp/v2 and friends,
+    no company namespace).
+  evidence:
+  - url: https://www.solarenspace.com/
+    status: 200
+  - url: https://www.solarenspace.com/openapi.json
+    status: 500
+  - url: https://www.solarenspace.com/graphql
+    status: 500
+  - url: https://www.solarenspace.com/.well-known/agent-card.json
+    status: 500
+  - url: https://www.solarenspace.com/wp-json/
+    status: 200
+  checked: '2026-08-28'

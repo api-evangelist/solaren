@@ -1,0 +1,17 @@
+generated: '2026-08-28'
+method: searched
+source: https://www.solarenspace.com/
+limit_count: 0
+rate_limits: []
+headers: []
+note: >-
+  No rate limits are documented because Solaren publishes no API. There is no developer
+  portal, no API reference, and no machine-readable contract on www.solarenspace.com; every
+  spec and /.well-known/ path probed on 2026-08-28 returned the WordPress theme's HTTP 500
+  error page. See well-known/solaren-well-known.yml for the probe record and the x-coverage
+  block in apis.yml for the coverage state.
+evidence:
+- url: https://www.solarenspace.com/
+  status: 200
+- url: https://www.solarenspace.com/openapi.json
+  status: 500
