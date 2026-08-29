@@ -12,6 +12,17 @@ description: >-
   agreement for space solar electricity, with Pacific Gas & Electric. Solaren is a hardware
   and energy-generation company and publishes no public developer program, API, or
   machine-readable API contract.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.solarenspace.com/wp-content/themes/solaren/img/logo.png
 url: https://raw.githubusercontent.com/api-evangelist/solaren/refs/heads/main/apis.yml
 x-type: company
