@@ -16,15 +16,15 @@
       "method": "feed"
     },
     {
-      "source": "https://www.solarenspace.com/blog/feed/",
-      "feed_url": "https://www.solarenspace.com/blog/feed/",
+      "source": "https://www.solarenspace.com/news-events/press-releases/blog/feed/",
+      "feed_url": "https://www.solarenspace.com/news-events/press-releases/blog/feed/",
       "title": "",
       "saved": 0,
       "method": "feed"
     },
     {
-      "source": "https://www.solarenspace.com/news-events/press-releases/blog/feed/",
-      "feed_url": "https://www.solarenspace.com/news-events/press-releases/blog/feed/",
+      "source": "https://www.solarenspace.com/blog/feed/",
+      "feed_url": "https://www.solarenspace.com/blog/feed/",
       "title": "",
       "saved": 0,
       "method": "feed"
@@ -38,5 +38,5 @@
     }
   ],
   "post_count": 10,
-  "fetched": "2026-10-10T13:15:00Z"
+  "fetched": "2026-10-17T14:53:57Z"
 }
